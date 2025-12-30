@@ -2,6 +2,8 @@
 
 Prototype: PIR HC-SR501 on a Waveshare RP2040 Zero. When motion is detected, two LEDs flash in opposition to imitate a siren.
 
+![image_1](https://github.com/user-attachments/assets/9fcfee10-47c9-4b81-8125-7ec6461bd75a)
+
 ## Hardware
 - Waveshare RP2040 Zero
 - PIR sensor HC-SR501
@@ -36,6 +38,9 @@ Note: the HC-SR501 output is typically around 3.3 V (RP2040 safe). If your modul
 - Purple jumper 2: GP2 from the RP2040 to the series resistor, then to the blue LED anode (blue LED cathode to ground).
 - Two resistors on the right are the current limiters for the LEDs; each sits between its GPIO pin and the purple wire going to the matching LED.
 - Keep a loose jumper for GP15->GND when you need the CIRCUITPY drive; remove it for normal locked operation.
+
+![image_2](https://github.com/user-attachments/assets/7d0e0a17-218f-4f08-8817-c266f93dbbbe)
+![image_3](https://github.com/user-attachments/assets/8dfbffeb-b8f5-4a81-bf05-a5b0420ddb38)
 
 ## Code behavior (`code.py`)
 - Pins: PIR on GP0 with pull-down; LED A on GP1; LED B on GP2.
